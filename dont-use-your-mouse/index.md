@@ -23,6 +23,12 @@ Organize multiple applications and windows on your monitors
 
 - [Rectangle](https://rectangleapp.com/) - free application that makes for easily customizable windowing via keystrokes
 
+## Omnisearch
+
+Spotlight is not enough. We must enhance our machine navigation capabilities
+
+- [Alfred](https://www.alfredapp.com/) - the most useful application on my machine
+
 ## Text Selection and Manipulation
 
 Universal keybindings for quickly selecting, deleting and manipulating text
