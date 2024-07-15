@@ -1,5 +1,7 @@
 # Don't Use Your Mouse
 
+[Slidedeck](https://docs.google.com/presentation/d/1hisRIaDZAfZIziXKSxVEUnGCuPAmxWT7a6ZjIk7o3Nc/edit?usp=sharing)
+
 Just don't do it. Think of your wrists. Think of how cool you'll look flying through applications on your machine, code in your editor and surfing the net with a flurry of keystrokes. You thinking of it? Sounds kinda cool, huh? Well below are some keybindings for population applications, as well as links to helpful resources.
 
 Also, give Vim a chance. You'll thank me in two years.
