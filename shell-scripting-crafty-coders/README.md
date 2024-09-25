@@ -25,7 +25,7 @@ Shell commands used:
 
 ### Automate Running of Failing CircleCI Cypress Tests Locally
 
-[Script](https://github.com/shipt/segway-next/blob/ab52e404d192c654b5231ef513418f35d0600238/scripts/run-failed-circle-cy-tests-locally.sh#L31)
+[Script](https://github.com/shipt/segway-next/blob/ab52e404d192c654b5231ef513418f35d0600238/scripts/run-failed-circle-cy-tests-locally.sh)
 
 Shell commands used:
 - `curl` for the initial API call to Circle CI to get the jobs for a workflow
@@ -39,6 +39,14 @@ Shell commands used:
 - `xargs` to run `yarn cypress run` with a comma separated list of failing spec files
 
 ### Run Code Analysis for Specific Hooks
+
+[Script](https://github.com/shipt/segway-scripts/blob/5f06e2511f3e921fa12abc98165a565bc03576da/use_membership_analysis)
+
+Shell/Libraries used:
+- `grep` to perform a text search for the `./src` directory where the text `useMembership(` appears, selecting only the filename
+- `grep` again to filter out test files
+- execute this shell command using the `execSync` node stdlib builtin. This will execute the command in a shell. The outputs of this command is a newline separated string
+- split this string to get an array of filenames, and map over each filename, read the file and passing the file contents to a code parser function for analysis
 
 ## Resources
 - [How to read man pages](https://www.geeksforgeeks.org/man-command-in-linux-with-examples/)
