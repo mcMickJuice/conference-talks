@@ -1,6 +1,23 @@
 # Shell Scripting
 
-## Some Scripts
+## Common/Useful Commands
+
+### Builtins
+grep - finding and filtering, performs text matching
+awk - filtering, replacing, logic
+find - finding, performs file name matching
+cat - print out file contents
+echo - output what is input
+sed - find and replace
+curl - api calls
+
+### Utilities (installable via homebrew)
+[jq](https://jqlang.github.io/jq/)
+[fzf](https://github.com/junegunn/fzf)
+[tldr](https://github.com/tldr-pages/tldr)
+
+
+## Some Use Cases
 
 ### Transform ESLint Output into CSV
 
