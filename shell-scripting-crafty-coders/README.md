@@ -13,6 +13,7 @@ curl - api calls
 
 ### Utilities (installable via homebrew)
 [jq](https://jqlang.github.io/jq/)
+[jqp](https://github.com/noahgorstein/jqp)
 [fzf](https://github.com/junegunn/fzf)
 [tldr](https://github.com/tldr-pages/tldr)
 
