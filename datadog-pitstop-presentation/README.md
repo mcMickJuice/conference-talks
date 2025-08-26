@@ -1,15 +1,5 @@
 # DataDog in Member Marketplace
 
-## How we've operationalized DD so far
-
-- [Monitors](https://us5.datadoghq.com/monitors/manage?q=team%3Amember-marketplace)
-  - [User Session anomaly detection](https://shipt.slack.com/archives/C014FFSAFNU/p1755886025241289)
-    - Web Vital regressions
-- [Dashboards](https://us5.datadoghq.com/dashboard/lists/manual/13456?p=1)
-  - [Performance benchmarks](https://us5.datadoghq.com/dashboard/63j-9xj-tc5/member-marketplace-web-performance-overview?fromUser=false&refresh_mode=sliding&from_ts=1755599033508&to_ts=1756203833508&live=true)
-- One-off queries
-  - [Copy graph in Session explorer](https://us5.datadoghq.com/rum/sessions?query=%40type%3Aview%20%40application.id%3A258666b0-d235-46b0-85ba-2a5f36be52d8%20env%3Aproduction%20%40usr.hasPlacedMarketplaceOrder%3Afalse%20%40usr.isLoggedIn%3Atrue%20%40view.name%3AGLOBAL_HOMEPAGE&agg_m=count&agg_m_source=base&agg_t=count&cols=&fromUser=false&viz=timeseries&from_ts=1756117508969&to_ts=1756203908969&live=true), paste in Slack, get an image preview
-
 ## How we've customized DD with custom actions and span modifications
 
 - user session tracking
@@ -31,6 +21,16 @@
   - [DataDog session query against this operation name](https://us5.datadoghq.com/rum/sessions?query=%40type%3Aresource%20%40application.id%3A258666b0-d235-46b0-85ba-2a5f36be52d8%20env%3Aproduction&agg_m=count&agg_m_source=base&agg_q=%40context.operationName&agg_q_source=base&agg_t=count&analyticsOptions=%5B%22bars%22%2C%22dog_classic%22%2Cnull%2Cnull%2C%22value%22%5D&cols=&fromUser=false&top_n=10&top_o=top&viz=sunburst&x_missing=true&from_ts=1756116827870&to_ts=1756203227870&live=true)
   - [Dashboard utilizing this property](https://us5.datadoghq.com/dashboard/bbc-n8d-4h6/baseuser-query?fromUser=false&refresh_mode=sliding&from_ts=1753524909879&to_ts=1756203309879&live=true)
   - [DataDog Docs for beforeSend property](https://docs.datadoghq.com/real_user_monitoring/browser/advanced_configuration/?tab=npm#enrich-and-control-rum-data) in config
+
+## How we've operationalized DD so far
+
+- [Monitors](https://us5.datadoghq.com/monitors/manage?q=team%3Amember-marketplace)
+  - [User Session anomaly detection](https://shipt.slack.com/archives/C014FFSAFNU/p1755886025241289)
+    - Web Vital regressions
+- [Dashboards](https://us5.datadoghq.com/dashboard/lists/manual/13456?p=1)
+  - [Performance benchmarks](https://us5.datadoghq.com/dashboard/63j-9xj-tc5/member-marketplace-web-performance-overview?fromUser=false&refresh_mode=sliding&from_ts=1755599033508&to_ts=1756203833508&live=true)
+- One-off queries
+  - [Copy graph in Session explorer](https://us5.datadoghq.com/rum/sessions?query=%40type%3Aview%20%40application.id%3A258666b0-d235-46b0-85ba-2a5f36be52d8%20env%3Aproduction%20%40usr.hasPlacedMarketplaceOrder%3Afalse%20%40usr.isLoggedIn%3Atrue%20%40view.name%3AGLOBAL_HOMEPAGE&agg_m=count&agg_m_source=base&agg_t=count&cols=&fromUser=false&viz=timeseries&from_ts=1756117508969&to_ts=1756203908969&live=true), paste in Slack, get an image preview
 
 ## Resources for learning more about DD
 
