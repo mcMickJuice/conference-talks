@@ -31,6 +31,9 @@
   - [Performance benchmarks](https://us5.datadoghq.com/dashboard/63j-9xj-tc5/member-marketplace-web-performance-overview?fromUser=false&refresh_mode=sliding&from_ts=1755599033508&to_ts=1756203833508&live=true)
 - One-off queries
   - [Copy graph in Session explorer](https://us5.datadoghq.com/rum/sessions?query=%40type%3Aview%20%40application.id%3A258666b0-d235-46b0-85ba-2a5f36be52d8%20env%3Aproduction%20%40usr.hasPlacedMarketplaceOrder%3Afalse%20%40usr.isLoggedIn%3Atrue%20%40view.name%3AGLOBAL_HOMEPAGE&agg_m=count&agg_m_source=base&agg_t=count&cols=&fromUser=false&viz=timeseries&from_ts=1756117508969&to_ts=1756203908969&live=true), paste in Slack, get an image preview
+- Encourage engineers leading projects to include DataDog observability in scope
+  - ensure feature is working with data
+  - regression analysis/alerting as part of feature work 
 
 ## Resources for learning more about DD
 
