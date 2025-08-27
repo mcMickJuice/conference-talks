@@ -38,6 +38,9 @@
 ## Resources for learning more about DD
 
 - [DataDog Learning Center](https://learn.datadoghq.com/)
+- Slack Channels
+  - #ext-datadog-shipt - channel contains DataDog reps and Slack engineers. Good place to ping DD folks about product features, SDK questions, etc
+  - #datadog-implementation-discussions - internal channel where Slack engineers discuss topics around migrating services and products to DataDog   
 - Recommend paths for FE engineers:
   - [Core Skills](https://learn.datadoghq.com/bundles/core-skills-learning-path)
   - [Frontend Engineers](https://learn.datadoghq.com/bundles/frontend-engineer-learning-path)
